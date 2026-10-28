@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './CreatePost.css'
 
-const CreatePost = () => {
+import { supabase } from '../client'
+
+const createPost = async () => {
 
     const [post, setPost] = useState({title: "", author: "", description: ""})
 
